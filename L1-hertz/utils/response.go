@@ -1,0 +1,41 @@
+package util
+
+import (
+	"net/http"
+
+	"github.com/cloudwego/hertz/pkg/app"
+)
+
+// Response 通用API响应结构
+// @Description 通用API响应格式
+type Response struct {
+	// 状态码
+	Status int `json:"status" example:"200"`
+	// 消息
+	Message string `json:"message" example:"success"`
+	// 数据
+	Data interface{} `json:"data"`
+}
+
+// const ErrCode
+
+// Success 成功响应
+func Success(ctx *app.RequestContext, data interface{}, msg string) {
+	if msg == "" {
+		msg = "success"
+	}
+	ctx.JSON(http.StatusOK, Response{
+		Status:  http.StatusOK,
+		Message: msg,
+		Data:    data,
+	})
+}
+
+// Error 错误响应
+func Error(ctx *app.RequestContext, errCode int, msg string) {
+	ctx.JSON(errCode, Response{
+		Status:  errCode,
+		Message: msg,
+		Data:    nil,
+	})
+}
