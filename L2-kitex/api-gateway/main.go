@@ -2,7 +2,7 @@ package main
 
 import (
 	"log"
-	"user-service/kitex_gen/user/userservice"
+	"microservicesDemo/L2-kitex/kitex_gen/user/userservice"
 
 	"github.com/cloudwego/hertz/pkg/app/server" // Hertz服务器
 	"github.com/cloudwego/kitex/client"         // Kitex客户端

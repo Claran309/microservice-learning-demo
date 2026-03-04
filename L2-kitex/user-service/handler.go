@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"user-service/kitex_gen/user"
+	"microservicesDemo/L2-kitex/kitex_gen/user"
 )
 
 // UserServiceImpl 实现Kitex生成的接口

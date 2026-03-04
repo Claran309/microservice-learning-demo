@@ -1,8 +1,8 @@
 package main
 
 import (
+	"microservicesDemo/L2-kitex/kitex_gen/user/userservice"
 	"net"
-	"user-service/kitex_gen/user/userservice"
 
 	"github.com/cloudwego/kitex/server"
 )

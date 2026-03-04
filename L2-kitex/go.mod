@@ -1,11 +1,11 @@
-module microservicesDemo/L2-kitex/api-gateway
+module microservicesDemo/L2-kitex
 
 go 1.25.3
 
 require (
+	github.com/cloudwego/gopkg v0.1.10
 	github.com/cloudwego/hertz v0.10.4
 	github.com/cloudwego/kitex v0.16.1
-	user-service v0.0.0-00010101000000-000000000000
 )
 
 require (
@@ -17,7 +17,6 @@ require (
 	github.com/cloudwego/dynamicgo v0.8.0 // indirect
 	github.com/cloudwego/fastpb v0.0.5 // indirect
 	github.com/cloudwego/frugal v0.3.1 // indirect
-	github.com/cloudwego/gopkg v0.1.10 // indirect
 	github.com/cloudwego/localsession v0.2.1 // indirect
 	github.com/cloudwego/netpoll v0.7.2 // indirect
 	github.com/cloudwego/runtimex v0.1.1 // indirect
@@ -48,5 +47,3 @@ require (
 	google.golang.org/protobuf v1.34.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace user-service => ../user-service

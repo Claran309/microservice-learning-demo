@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"log"
+	"microservicesDemo/L2-kitex/kitex_gen/user"
 	"time"
-	"user-service/kitex_gen/user"
 
 	"github.com/cloudwego/hertz/pkg/app"
 	"github.com/cloudwego/hertz/pkg/common/utils"
