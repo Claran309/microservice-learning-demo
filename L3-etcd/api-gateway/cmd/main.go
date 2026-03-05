@@ -1,4 +1,4 @@
-package cmd
+package main
 
 import (
 	"microservicesDemo/L3-etcd/api-gateway/internal"
@@ -18,4 +18,6 @@ func main() {
 
 	// 注册路由
 	internal.InitRouters(h, httpHandler)
+
+	h.Spin()
 }
