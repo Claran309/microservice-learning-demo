@@ -9,21 +9,20 @@
      - 注册中心
        - [x] etcd
        - [ ] consul
-     - [ ] sentinel
      - [x] 令牌桶、漏桶
      - [x] 熔断
      - [x] 服务降级
      - [x] 均衡负载机制
-     - [ ] redis分布式限流
+     - [x] redis分布式限流
      - [ ] redis集群
+  - 消息队列
+      - [ ] kafka
+      - [ ] rocketMQ
+      - [ ] rabbitMQ
+      - [ ] nsq
    - API网关
      - [ ] 反向代理Nginx
      - [ ] traefik
-   - 消息队列
-     - [ ] kafka
-     - [ ] rocketMQ
-     - [ ] rabbitMQ
-     - [ ] nsq
    - 可观测性
      - [ ] Metrics
      - [ ] Tracing
