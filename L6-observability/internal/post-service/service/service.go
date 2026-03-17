@@ -5,12 +5,16 @@ import (
 	"errors"
 	"fmt"
 	"log"
-	"microservicesDemo/L5-kafka/internal/post-service/dao"
-	"microservicesDemo/L5-kafka/internal/post-service/model"
-	mq "microservicesDemo/L5-kafka/pkg/mq/kafka"
+	"microservicesDemo/L6-observability/internal/post-service/dao"
+	"microservicesDemo/L6-observability/internal/post-service/model"
+	mq "microservicesDemo/L6-observability/pkg/mq/kafka"
+	"strconv"
 	"time"
 
 	"github.com/cloudwego/hertz/pkg/common/json"
+	"go.opentelemetry.io/otel"
+	"go.opentelemetry.io/otel/attribute"
+	"go.opentelemetry.io/otel/codes"
 )
 
 type PostService interface {
@@ -124,14 +128,21 @@ func (s *postServiceImpl) StopConsumer() {
 }
 
 func (s *postServiceImpl) CreatePost(ctx context.Context, title string, userID int64, content string) (*model.Post, error) {
+	tracer := otel.Tracer("post-service")
+	spanCtx, span := tracer.Start(ctx, "service.CreatePost")
+	defer span.End()
+
 	var post = model.Post{
 		Title:   title,
 		Content: content,
 		Owner:   userID,
 	}
 
-	err := s.PostRepo.AddPost(ctx, &post)
+	err := s.PostRepo.AddPost(spanCtx, &post)
 	if err != nil {
+		span.RecordError(errors.New("添加文章失败: " + err.Error()))
+		span.SetStatus(codes.Error, "添加文章失败: "+err.Error())
+		span.SetAttributes(attribute.Bool("dao.success", false))
 		return nil, err
 	}
 
@@ -145,13 +156,27 @@ func (s *postServiceImpl) CreatePost(ctx context.Context, title string, userID i
 			"content":       post.Content,
 			"registered_at": time.Now(),
 		})
-		s.KafkaProducer.SendPostEvent(ctx, fmt.Sprintf("%d", post.PostID), eventData)
+		err := s.KafkaProducer.SendPostEvent(ctx, fmt.Sprintf("%d", post.PostID), eventData)
+		if err != nil {
+			span.RecordError(errors.New("发送添加文章事件失败:user_id:%d" + strconv.Itoa(int(post.PostID))))
+			span.SetStatus(codes.Error, "发送添加文章事件失败:user_id:%d"+strconv.Itoa(int(post.PostID))+err.Error())
+			span.SetAttributes(attribute.Bool("kafka.success", false))
+			fmt.Printf("发送添加文章事件失败:post_id:%d", post.PostID)
+		}
 		fmt.Printf("发送帖子创建事件:user_id:%d", post.PostID)
 	}
+
+	span.SetAttributes(attribute.Bool("kafka.success", true))
 
 	return &post, nil
 }
 
 func (s *postServiceImpl) DeletePost(ctx context.Context, postID int64) error {
+	tracer := otel.Tracer("post-service")
+	ctx, span := tracer.Start(ctx, "service.DeletePost")
+	defer span.End()
+
+	span.SetAttributes(attribute.Bool("kafka.success", true))
+
 	return s.PostRepo.DeletePost(ctx, postID)
 }

@@ -4,50 +4,25 @@
    - 架构
        - [x] kitex
        - [x] idl编写
-       - [ ] go-zero
    - 服务治理
      - 注册中心
        - [x] etcd
-       - [ ] consul
      - [x] 令牌桶、漏桶
      - [x] 熔断
      - [x] 服务降级
      - [x] 均衡负载机制
      - [x] redis分布式限流
-     - [ ] redis集群
   - 消息队列
-      - [ ] kafka
-      - [ ] rocketMQ
-      - [ ] rabbitMQ
-      - [ ] nsq
+      - [x] kafka
    - API网关
-     - [ ] 反向代理Nginx
-     - [ ] traefik
+     - [x] 反向代理Nginx
+     - [x] traefik
    - 可观测性
-     - [ ] Metrics
-     - [ ] Tracing
-     - [ ] 链路追踪 Jeager
-     - [ ] OpenTelemetry
-     - [ ] Prometheus
-     - [ ] grafana
-     - [ ] otel-collector
+     - [x] Prometheus
+     - [x] Jeager
+     - [x] grafana
+     - [x] OTel
      - [ ] ELK、EFK
    - 分布式事务
      - [ ] Saga
      - [ ] dtm
-     
-## future plan
-- AI Agent
-  - rag
-  - mcp
-  - skills
-  - eino
-  - 设计范式
-- K8S
-- CI/CD
-- 计算机底层理论
-  - 计算机组成原理
-  - 计网
-- Go语言源码深入
-  - Go语言设计与实现
-- 八股
