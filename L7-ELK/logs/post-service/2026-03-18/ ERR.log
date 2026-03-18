@@ -1,0 +1,3 @@
+[post-service] {"level":"error","timestamp":"2026-03-18 17:00:20","caller":"service/service.go:75","message":"× 接收消息失败","error":"读取消息失败: fetching message: EOF","service":"post-service"}
+[post-service] {"level":"error","timestamp":"2026-03-18 17:01:51","caller":"service/service.go:75","message":"× 接收消息失败","error":"读取消息失败: fetching message: EOF","service":"post-service"}
+[post-service] {"level":"error","timestamp":"2026-03-18 17:03:02","caller":"service/service.go:75","message":"× 接收消息失败","error":"读取消息失败: fetching message: EOF","service":"post-service"}

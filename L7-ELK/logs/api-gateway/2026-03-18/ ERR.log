@@ -1,0 +1,2 @@
+[api-gateway] {"level":"error","timestamp":"2026-03-18 17:02:14","caller":"handler/handler.go:109","message":"× RPC调用失败: ：","error":"service discovery error: no instance remains for user-service","handler":"login","rpc_method":"UserClient.Login"}
+[api-gateway] {"level":"error","timestamp":"2026-03-18 17:02:38","caller":"handler/handler.go:109","message":"× RPC调用失败: ：","error":"remote or network error[remote]: biz error: 关键字段为空","handler":"login","rpc_method":"UserClient.Login"}

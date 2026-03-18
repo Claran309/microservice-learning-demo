@@ -20,9 +20,9 @@
    - 可观测性
      - [x] Prometheus
      - [x] Jeager
-     - [x] grafana
      - [x] OTel
-     - [ ] ELK、EFK
+     - [x] grafana
+     - [x] ELK
    - 分布式事务
      - [ ] Saga
      - [ ] dtm

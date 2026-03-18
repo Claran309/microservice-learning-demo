@@ -1,0 +1,70 @@
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:01","caller":"user-service/main.go:25","message":"√ 初始化Zap成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:01","caller":"dao/dao.go:17","message":"开始初始化数据库连接","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"dao/dao.go:30","message":"√ 数据库连接成功","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"user-service/main.go:34","message":"√ 初始化数据库成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"user-service/main.go:43","message":"√ 初始化Kafka生产者成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"user-service/main.go:54","message":"√ OpenTelemetry 初始化完成"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"dao/dao.go:46","message":"开始初始化UserRepository","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"dao/dao.go:59","message":"√ 自动迁移User模型成功","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"dao/dao.go:63","message":"√ 初始化UserRepository成功","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"user-service/main.go:58","message":"√ 初始化仓储层成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"service/service.go:31","message":"√ 初始化UserService服务成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"user-service/main.go:62","message":"√ 初始化服务层成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"handler/handler.go:69","message":"√ 初始化UserService处理器成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"user-service/main.go:66","message":"√ 初始化处理器成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"user-service/main.go:75","message":"√ 初始化etcd注册中心成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"user-service/main.go:84","message":"√ 解析TCP地址成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"user-service/main.go:99","message":"√ 创建Kitex服务器成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"user-service/main.go:102","message":"启动user-service服务","address":"127.0.0.1:8080","etcd":":2379","otel_collector":":8079","max_connections":1000,"max_qps":1000}
+[user-service] {"level":"info","timestamp":"2026-03-18 16:59:02","caller":"user-service/main.go:109","message":"监控面板信息:","jaeger":"http://:8085","prometheus":"","grafana":"http://:8086 (admin/admin123)"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"user-service/main.go:25","message":"√ 初始化Zap成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"dao/dao.go:17","message":"开始初始化数据库连接","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"dao/dao.go:30","message":"√ 数据库连接成功","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"user-service/main.go:34","message":"√ 初始化数据库成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"user-service/main.go:43","message":"√ 初始化Kafka生产者成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"user-service/main.go:54","message":"√ OpenTelemetry 初始化完成"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"dao/dao.go:46","message":"开始初始化UserRepository","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"dao/dao.go:59","message":"√ 自动迁移User模型成功","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"dao/dao.go:63","message":"√ 初始化UserRepository成功","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"user-service/main.go:58","message":"√ 初始化仓储层成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"service/service.go:31","message":"√ 初始化UserService服务成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"user-service/main.go:62","message":"√ 初始化服务层成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"handler/handler.go:69","message":"√ 初始化UserService处理器成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"user-service/main.go:66","message":"√ 初始化处理器成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"user-service/main.go:75","message":"√ 初始化etcd注册中心成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"user-service/main.go:84","message":"√ 解析TCP地址成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"user-service/main.go:99","message":"√ 创建Kitex服务器成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"user-service/main.go:102","message":"启动user-service服务","address":"127.0.0.1:8080","etcd":":2379","otel_collector":":8079","max_connections":1000,"max_qps":1000}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:01:57","caller":"user-service/main.go:109","message":"监控面板信息:","jaeger":"http://:8085","prometheus":"","grafana":"http://:8086 (admin/admin123)"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"user-service/main.go:25","message":"√ 初始化Zap成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"dao/dao.go:17","message":"开始初始化数据库连接","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"dao/dao.go:30","message":"√ 数据库连接成功","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"user-service/main.go:34","message":"√ 初始化数据库成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"user-service/main.go:43","message":"√ 初始化Kafka生产者成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"user-service/main.go:54","message":"√ OpenTelemetry 初始化完成"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"dao/dao.go:46","message":"开始初始化UserRepository","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"dao/dao.go:59","message":"√ 自动迁移User模型成功","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"dao/dao.go:63","message":"√ 初始化UserRepository成功","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"user-service/main.go:58","message":"√ 初始化仓储层成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"service/service.go:31","message":"√ 初始化UserService服务成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"user-service/main.go:62","message":"√ 初始化服务层成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"handler/handler.go:69","message":"√ 初始化UserService处理器成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"user-service/main.go:66","message":"√ 初始化处理器成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"user-service/main.go:75","message":"√ 初始化etcd注册中心成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"user-service/main.go:84","message":"√ 解析TCP地址成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"user-service/main.go:99","message":"√ 创建Kitex服务器成功"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"user-service/main.go:102","message":"启动user-service服务","address":"127.0.0.1:8080","etcd":":2379","otel_collector":":8079","max_connections":1000,"max_qps":1000}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:26","caller":"user-service/main.go:109","message":"监控面板信息:","jaeger":"http://:8085","prometheus":"","grafana":"http://:8086 (admin/admin123)"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:28","caller":"handler/handler.go:76","message":"开始处理Register请求","username":"Claran","email":"ss@a.com"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:28","caller":"service/service.go:36","message":"开始执行Register服务","username":"Claran","email":"ss@a.com"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:28","caller":"dao/dao.go:70","message":"开始执行AddUser操作","username":"Claran","email":"ss@a.com","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:28","caller":"dao/dao.go:117","message":"√ 创建用户成功","user_id":26,"username":"Claran","email":"ss@a.com","component":"dao"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:28","caller":"service/service.go:71","message":"√ 添加用户成功","service":"user-service","user_id":26,"username":"Claran","email":"ss@a.com"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:28","caller":"service/service.go:104","message":"√ 发送用户注册事件成功","service":"user-service","user_id":26}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:28","caller":"handler/handler.go:136","message":"√ 注册服务执行成功","user_id":26,"username":"Claran","email":"ss@a.com"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:28","caller":"handler/handler.go:106","message":"Register请求处理完成","duration":157,"status":"success","username":"Claran"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:38","caller":"handler/handler.go:76","message":"开始处理Register请求","username":"Claran","email":"ss@a.com"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:38","caller":"service/service.go:36","message":"开始执行Register服务","username":"Claran","email":"ss@a.com"}
+[user-service] {"level":"error","timestamp":"2026-03-18 17:02:38","caller":"service/service.go:46","message":"× 关键字段为空","service":"user-service","username":"Claran","email":"ss@a.com"}
+[user-service] {"level":"error","timestamp":"2026-03-18 17:02:38","caller":"handler/handler.go:125","message":"× 执行注册服务失败","error":"关键字段为空","handler":"Register","username":"Claran","email":"ss@a.com"}
+[user-service] {"level":"info","timestamp":"2026-03-18 17:02:38","caller":"handler/handler.go:106","message":"Register请求处理完成","duration":1,"status":"error","username":"Claran"}

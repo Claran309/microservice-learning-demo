@@ -1,0 +1,2 @@
+[user-service] {"level":"error","timestamp":"2026-03-18 17:02:38","caller":"service/service.go:46","message":"× 关键字段为空","service":"user-service","username":"Claran","email":"ss@a.com"}
+[user-service] {"level":"error","timestamp":"2026-03-18 17:02:38","caller":"handler/handler.go:125","message":"× 执行注册服务失败","error":"关键字段为空","handler":"Register","username":"Claran","email":"ss@a.com"}

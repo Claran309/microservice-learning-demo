@@ -1,0 +1,70 @@
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:24","message":"√ 初始化Zap成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"dao/dao.go:16","message":"开始初始化数据库连接"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"dao/dao.go:27","message":"√ 数据库连接成功","component":"dao"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:33","message":"√ 初始化数据库成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:43","message":"√ 初始化Kafka生产者成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:53","message":"√ 初始化Kafka消费者成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:64","message":"√ OpenTelemetry 初始化完成"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"dao/dao.go:43","message":"开始初始化PostRepository"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"dao/dao.go:54","message":"√ 自动迁移Post模型成功","component":"dao"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"dao/dao.go:58","message":"√ 初始化PostRepository成功","component":"dao"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:68","message":"√ 初始化仓储层成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:72","message":"√ 初始化服务层成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"handler/handler.go:70","message":"√ 初始化PostService处理器成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:76","message":"√ 初始化处理器成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"service/service.go:51","message":"√ 消费者启动成功","topic":"user","group":"1"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:81","message":"√ 启动Kafka消费者监听成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:90","message":"√ 初始化etcd注册中心成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:99","message":"√ 解析TCP地址成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:109","message":"√ 创建Kitex服务器成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:112","message":"启动post-service服务","address":"127.0.0.1:8081","etcd":":2379","otel_collector":":8079"}
+[post-service] {"level":"info","timestamp":"2026-03-18 16:59:06","caller":"post-service/main.go:117","message":"监控面板信息:","jaeger":"http://:8085","prometheus":"","grafana":"http://:8086 (admin/admin123)"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:20","caller":"service/service.go:139","message":"√ 消费者已停止","service":"post-service"}
+[post-service] {"level":"error","timestamp":"2026-03-18 17:00:20","caller":"service/service.go:75","message":"× 接收消息失败","error":"读取消息失败: fetching message: EOF","service":"post-service"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:21","caller":"service/service.go:63","message":"√ 消费者停止"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:24","message":"√ 初始化Zap成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"dao/dao.go:16","message":"开始初始化数据库连接"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"dao/dao.go:27","message":"√ 数据库连接成功","component":"dao"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:33","message":"√ 初始化数据库成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:43","message":"√ 初始化Kafka生产者成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:53","message":"√ 初始化Kafka消费者成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:64","message":"√ OpenTelemetry 初始化完成"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"dao/dao.go:43","message":"开始初始化PostRepository"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"dao/dao.go:54","message":"√ 自动迁移Post模型成功","component":"dao"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"dao/dao.go:58","message":"√ 初始化PostRepository成功","component":"dao"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:68","message":"√ 初始化仓储层成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:72","message":"√ 初始化服务层成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"handler/handler.go:70","message":"√ 初始化PostService处理器成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:76","message":"√ 初始化处理器成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"service/service.go:51","message":"√ 消费者启动成功","topic":"user","group":"1"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:81","message":"√ 启动Kafka消费者监听成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:90","message":"√ 初始化etcd注册中心成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:99","message":"√ 解析TCP地址成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:109","message":"√ 创建Kitex服务器成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:112","message":"启动post-service服务","address":"127.0.0.1:8081","etcd":":2379","otel_collector":":8079"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:00:31","caller":"post-service/main.go:117","message":"监控面板信息:","jaeger":"http://:8085","prometheus":"","grafana":"http://:8086 (admin/admin123)"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:51","caller":"service/service.go:139","message":"√ 消费者已停止","service":"post-service"}
+[post-service] {"level":"error","timestamp":"2026-03-18 17:01:51","caller":"service/service.go:75","message":"× 接收消息失败","error":"读取消息失败: fetching message: EOF","service":"post-service"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:24","message":"√ 初始化Zap成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"dao/dao.go:16","message":"开始初始化数据库连接"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"dao/dao.go:27","message":"√ 数据库连接成功","component":"dao"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:33","message":"√ 初始化数据库成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:43","message":"√ 初始化Kafka生产者成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:53","message":"√ 初始化Kafka消费者成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:64","message":"√ OpenTelemetry 初始化完成"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"dao/dao.go:43","message":"开始初始化PostRepository"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"dao/dao.go:54","message":"√ 自动迁移Post模型成功","component":"dao"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"dao/dao.go:58","message":"√ 初始化PostRepository成功","component":"dao"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:68","message":"√ 初始化仓储层成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:72","message":"√ 初始化服务层成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"handler/handler.go:70","message":"√ 初始化PostService处理器成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:76","message":"√ 初始化处理器成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"service/service.go:51","message":"√ 消费者启动成功","topic":"user","group":"1"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:81","message":"√ 启动Kafka消费者监听成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:90","message":"√ 初始化etcd注册中心成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:99","message":"√ 解析TCP地址成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:109","message":"√ 创建Kitex服务器成功"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:112","message":"启动post-service服务","address":"127.0.0.1:8081","etcd":":2379","otel_collector":":8079"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:01:54","caller":"post-service/main.go:117","message":"监控面板信息:","jaeger":"http://:8085","prometheus":"","grafana":"http://:8086 (admin/admin123)"}
+[post-service] {"level":"info","timestamp":"2026-03-18 17:03:02","caller":"service/service.go:139","message":"√ 消费者已停止","service":"post-service"}
+[post-service] {"level":"error","timestamp":"2026-03-18 17:03:02","caller":"service/service.go:75","message":"× 接收消息失败","error":"读取消息失败: fetching message: EOF","service":"post-service"}

@@ -1,0 +1,27 @@
+[api-gateway] {"level":"info","timestamp":"2026-03-18 16:57:20","caller":"api-gateway/main.go:27","message":"√ 初始化Hertz OTel Provider成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 16:57:20","caller":"client/client.go:26","message":"√ 创建etcd解析器成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 16:57:20","caller":"client/client.go:30","message":"√ 创建熔断器成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 16:57:20","caller":"client/client.go:41","message":"√ 创建user-service客户端成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 16:57:20","caller":"client/client.go:47","message":"√ 创建post-service客户端成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 16:57:20","caller":"api-gateway/main.go:34","message":"√ 创建rpc客户端成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 16:57:20","caller":"handler/handler.go:47","message":"√ 创建指标成功：requests_total，request_duration_seconds"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 16:57:20","caller":"api-gateway/main.go:38","message":"√ 创建http处理器成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 16:57:20","caller":"api-gateway/main.go:42","message":"√ 启动hertz服务器成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 16:57:20","caller":"api-gateway/main.go:49","message":"√ 注册路由成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:01","caller":"api-gateway/main.go:27","message":"√ 初始化Hertz OTel Provider成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:01","caller":"client/client.go:26","message":"√ 创建etcd解析器成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:01","caller":"client/client.go:30","message":"√ 创建熔断器成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:01","caller":"client/client.go:41","message":"√ 创建user-service客户端成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:01","caller":"client/client.go:47","message":"√ 创建post-service客户端成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:01","caller":"api-gateway/main.go:34","message":"√ 创建rpc客户端成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:01","caller":"handler/handler.go:47","message":"√ 创建指标成功：requests_total，request_duration_seconds"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:01","caller":"api-gateway/main.go:38","message":"√ 创建http处理器成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:01","caller":"api-gateway/main.go:42","message":"√ 启动hertz服务器成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:01","caller":"api-gateway/main.go:49","message":"√ 注册路由成功"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:14","caller":"handler/handler.go:69","message":"√ 获取Trace成功：handler"}
+[api-gateway] {"level":"error","timestamp":"2026-03-18 17:02:14","caller":"handler/handler.go:109","message":"× RPC调用失败: ：","error":"service discovery error: no instance remains for user-service","handler":"login","rpc_method":"UserClient.Login"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:28","caller":"handler/handler.go:69","message":"√ 获取Trace成功：handler"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:28","caller":"handler/handler.go:122","message":"× RPC调用成功: user-service.Register"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:28","caller":"handler/handler.go:143","message":"用户注册成功","user_id":26,"success":true,"duration":0.1701158,"endpoint":"/register","method":"POST"}
+[api-gateway] {"level":"info","timestamp":"2026-03-18 17:02:38","caller":"handler/handler.go:69","message":"√ 获取Trace成功：handler"}
+[api-gateway] {"level":"error","timestamp":"2026-03-18 17:02:38","caller":"handler/handler.go:109","message":"× RPC调用失败: ：","error":"remote or network error[remote]: biz error: 关键字段为空","handler":"login","rpc_method":"UserClient.Login"}
