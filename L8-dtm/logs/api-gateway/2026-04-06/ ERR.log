@@ -1,0 +1,6 @@
+[api-gateway] 2026-04-06T17:55:38.877+0800	[31mERROR[0m	api-gateway/main.go:35	× Redis集群连接失败	{"error": "dial tcp :7005: connectex: No connection could be made because the target machine actively refused it.", "component": "redis"}
+[api-gateway] 2026-04-06T17:55:38.881+0800	[31mFATAL[0m	runtime/proc.go:285	× 初始化Redis集群失败	{"error": "Redis集群连接失败: dial tcp :7005: connectex: No connection could be made because the target machine actively refused it."}
+[api-gateway] 2026-04-06T17:57:46.579+0800	[31mERROR[0m	api-gateway/main.go:35	× Redis集群连接失败	{"error": "dial tcp :7005: connectex: No connection could be made because the target machine actively refused it.", "component": "redis"}
+[api-gateway] 2026-04-06T17:57:46.596+0800	[31mFATAL[0m	runtime/proc.go:285	× 初始化Redis集群失败	{"error": "Redis集群连接失败: dial tcp :7005: connectex: No connection could be made because the target machine actively refused it."}
+[api-gateway] 2026-04-06T18:04:29.030+0800	[31mERROR[0m	api-gateway/main.go:35	× Redis集群连接失败	{"error": "dial tcp :7005: connectex: No connection could be made because the target machine actively refused it.", "component": "redis"}
+[api-gateway] 2026-04-06T18:04:29.031+0800	[31mFATAL[0m	runtime/proc.go:285	× 初始化Redis集群失败	{"error": "Redis集群连接失败: dial tcp :7005: connectex: No connection could be made because the target machine actively refused it."}
