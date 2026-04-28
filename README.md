@@ -24,5 +24,4 @@
      - [x] grafana
      - [x] ELK
    - 分布式事务
-     - [ ] Saga
-     - [ ] dtm
+     - [x] dtm
